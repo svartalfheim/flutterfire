@@ -125,10 +125,7 @@ start the activity with this intent filter to handle the link.
 
 To handle a Dynamic Link in your application, two scenarios require implementing.
 
-### Terminated State
-
-If the application is terminated, the [`FirebaseDynamicLinks.getInitialLink`](!firebase_dynamic_links.getInitialLink)
-method allows you to retrieve the Dynamic Link that opened the application.
+### Initialized State
 
 This is an asynchronous request, so it makes sense to handle a link before rendering application logic, such as 
 a navigator. For example, you could handle this in the `main` function:
